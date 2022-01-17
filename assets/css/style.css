@@ -134,15 +134,16 @@ footer a {
 }
 
 .application1 img {
-    max-width: 1200px;
+    width: 1000px;
+    height: 300px;
   
     opacity: 0.5;
     border: solid 3px var(--primary-color);
 }
 
 .application img {
-    max-width: 500px;
-    
+    width: 500px;
+    height: 300px;
     opacity: 0.5;
     border: solid 3px var(--primary-color);
 }
@@ -220,27 +221,6 @@ footer a {
         text-align: center;
         width: 100%
     }
-
-    .hero-cta, .hero-form {
-        width: 100%;
-    }
-
-    .hero-cta {
-        text-align: center;
-    }
-
-    .section-title {
-        width: 80%;
-    }
-
-    .trainer {
-        flex: 0 70%;
-    }
-
-    .contact-info iframe {
-        flex: 1 100%;
-    }
-
 }
 
 
@@ -250,61 +230,17 @@ footer a {
     section {
         padding: 30px 15px;
     }
-
-    .step h3 {
-        flex: 1 100%;
-        text-align: center;
-    }
-
-    .step-info {
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .step-text {
-        flex: 100%;
-    }
-
 }
 
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
 
-    .hero-form button {
-        width: 100%;
-    }
-
-    .section-title {
-        width: 95%;
-    }
-
-    .intro p {
-        width: 100%;
-    }
-
-    .trainer {
-        flex: 0 100%;
-    }
-
-    .contact-info {
-        text-align: center;
-    }
-
-    .contact-info > * {
-        flex: 0 100%;
-    }
-
-    .contact-form {
-        order: 3;
+    .application1 img {
+        width: 500px;
+      
+        opacity: 0.5;
+        border: solid 3px var(--primary-color);
     }
 
 }
