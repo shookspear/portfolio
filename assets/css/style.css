@@ -103,11 +103,10 @@ footer a {
 
 /* My Work Section */
 .applications {
-    width: 100%;
-    margin: 0 auto;
+ 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .applications h3 {
@@ -125,24 +124,27 @@ footer a {
 }
 
 .application1 {
-    flex:2 100%;
+    flex:2;
     position: relative;
 }
 
 .application {
-    flex:1 20%;
+    flex:1;
     position: relative;
 }
 
 .application1 img {
+    max-width: 1200px;
+  
     opacity: 0.5;
     border: solid 3px var(--primary-color);
 }
 
 .application img {
-
+    max-width: 500px;
+    
     opacity: 0.5;
-    border: solid 5px var(--primary-color);
+    border: solid 3px var(--primary-color);
 }
 
 .application1 img:hover, .application img:hover {
