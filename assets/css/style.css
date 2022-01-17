@@ -8,6 +8,7 @@ body {
     background-color: var(--tertiary-color);
 }
 
+/* Header Section */
 header {
     padding: 0px 35px 0px 0px;
     display: flex;
@@ -16,13 +17,8 @@ header {
     background-color: var(--secondary-color);
 }
 
-
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none;
-    
+header nav {
+    margin: 10px 10px;
 }
 
 header h1 {
@@ -30,17 +26,11 @@ header h1 {
     font-size: 40px;
     color: var(--secondary-color);
     padding: 10px 10px 10px 50px;
-   
 }
 
 header a {
     text-decoration: none;
     color: var(--secondary-color);
-    
-}
-
-header nav {
-    margin: 10px 10px;
 }
 
 header nav ul {
@@ -61,21 +51,7 @@ header nav ul li a {
     padding-bottom: 5px;
 }
 
-.title, .application-title {
-    background-color: var(--primary-color);
-}
-
-h2 {
-    font-size: 35px;
-    color: var(--secondary-color);
-    display: inline;
-    text-align: right;
-    border-right: 3px solid;
-    padding: 0 10px 20px 10px;
-    margin-bottom: 35px;
-    width: 20%;
-}
-
+/* Hero Section */
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -97,6 +73,7 @@ h2 {
        
 }
 
+/*Footer Section */
 footer {
     display: flex;
     justify-content: space-around;
@@ -124,6 +101,7 @@ footer a {
     padding-bottom: 5px;
 }
 
+/* My Work Section */
 .applications {
     width: 100%;
     margin: 0 auto;
@@ -147,25 +125,22 @@ footer a {
 }
 
 .application1 {
-    flex:2;
+    flex:2 100%;
     position: relative;
 }
 
 .application {
-    flex:1;
+    flex:1 20%;
     position: relative;
 }
 
 .application1 img {
     opacity: 0.5;
     border: solid 3px var(--primary-color);
-
- 
 }
 
 .application img {
-    width: 300px;
-    height: 300px;
+
     opacity: 0.5;
     border: solid 5px var(--primary-color);
 }
@@ -182,10 +157,22 @@ footer a {
 }
 
 
-article {
-    display: inline;
+.title, .application-title {
+    background-color: var(--primary-color);
 }
 
+.about h2, .work h2, .contact h2 {
+    font-size: 35px;
+    color: var(--secondary-color);
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: right;
+    text-align: right;
+    border-right: 3px solid;
+    padding: 0 10px 20px 10px;
+    margin-bottom: 35px;
+    width: 5%;
+}
 
 .about, .work, .contact {
     display: flex;
