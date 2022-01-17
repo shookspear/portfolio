@@ -1,14 +1,19 @@
+:root {
+    --primary-color: #7cdedc;
+    --secondary-color: #3e3e3e;
+    --tertiary-color: #e0e0e0;
+}
 
 body {
-    background-color: rgb(224, 224, 224);
+    background-color: var(--tertiary-color);
 }
 
 header {
-    padding: 20px 35px;
+    padding: 0px 35px 0px 0px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: rgb(62, 62, 62);
+    background-color: var(--secondary-color);
 }
 
 
@@ -22,20 +27,20 @@ header nav ul {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
-    color: #fce138;
-    margin: 0;
+    font-size: 40px;
+    color: var(--secondary-color);
+    padding: 10px 10px 10px 50px;
    
 }
 
 header a {
     text-decoration: none;
-    color: #000;
+    color: var(--secondary-color);
     
 }
 
 header nav {
-    margin: 7px 0;
+    margin: 10px 10px;
 }
 
 header nav ul {
@@ -50,19 +55,25 @@ header nav ul li a {
     margin: 0 10px;
     font-weight: lighter;
     font-size: 20px;
-    text-decoration: underline;
-    color: #8fcfe2;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
+}
+
+.title, .application-title {
+    background-color: var(--primary-color);
 }
 
 h2 {
     font-size: 35px;
+    color: var(--secondary-color);
     display: inline;
     text-align: right;
     border-right: 3px solid;
     padding: 0 10px 20px 10px;
     margin-bottom: 35px;
     width: 20%;
-    
 }
 
 .hero {
@@ -70,8 +81,9 @@ h2 {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     flex-wrap: wrap;
+    padding-right: 10px;
     
 }
 
@@ -80,15 +92,12 @@ h2 {
     display: inline;
     text-align: right;
     border-right: none;
-    padding: 0 10px 20px 10px;
+    padding: 10px 10px;
     margin-bottom: 35px;
-
-    
+       
 }
 
 footer {
- 
-
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -109,8 +118,10 @@ footer div ul li {
 footer a {
     font-weight: lighter;
     font-size: 20px;
-    text-decoration: underline;
-    color: #000;
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
 }
 
 .applications {
@@ -121,32 +132,59 @@ footer a {
     justify-content: space-around;
 }
 
+.applications h3 {
+    padding-left: 20px;
+    padding-right: 10px;
+    margin: 5px;
+    color: var(--secondary-color);
+    font-size:26px;
+}
+
+.applications p {
+    padding-left: 20px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
 .application1 {
     flex:2;
+    position: relative;
 }
 
 .application {
     flex:1;
+    position: relative;
 }
 
 .application1 img {
     opacity: 0.5;
+    border: solid 3px var(--primary-color);
+
+ 
 }
 
 .application img {
     width: 300px;
     height: 300px;
     opacity: 0.5;
+    border: solid 5px var(--primary-color);
 }
 
 .application1 img:hover, .application img:hover {
     opacity: 1;
 }
 
+.application-title {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    z-index: 9999;
+}
+
+
 article {
     display: inline;
 }
-
 
 
 .about, .work, .contact {
